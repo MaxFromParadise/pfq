@@ -30,7 +30,8 @@ const initAnimations = () => {
         .review-process,
         .item-team,
         .process__item,
-        .item-faq
+        .item-faq,
+        .card-process__line
     `);
 
 	animateElements.forEach((el) => {

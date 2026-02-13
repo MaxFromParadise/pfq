@@ -147,6 +147,10 @@ p {
   text-decoration: underline;
 }
 
+.headerMainPage .header__container a[href*=tel]:hover {
+  color: var(--blue);
+}
+
 .headerMainPage .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1237,10 +1241,6 @@ p {
   margin-bottom: 4.375rem;
 }
 
-.process__item:first-child .card-process__line {
-  max-width: 100%;
-}
-
 .process__item::before {
   content: "";
   display: none;
@@ -1299,6 +1299,10 @@ p {
   z-index: -1;
 }
 
+.animate-in.card-process__line {
+  max-width: 1000px;
+}
+
 .card-process {
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 1.5rem;
@@ -1353,11 +1357,13 @@ p {
 
 .card-process__line {
   height: 0.1875rem;
-  max-width: 9.0625rem;
+  max-width: 0rem;
   width: 100%;
   background: #0077ff;
   border-radius: 0.3125rem;
   margin-bottom: 0.8125rem;
+  -webkit-transition: max-width 1.5s ease-out 0s !important;
+  transition: max-width 1.5s ease-out 0s !important;
 }
 
 .review-process {
@@ -1656,7 +1662,7 @@ p {
 .item-faq:hover {
   -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  border-color: #8f9092;
+  border-color: #cbcccf;
 }
 
 .item-faq:not(:last-child) {
@@ -1721,6 +1727,19 @@ p {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 155.556%;
+}
+
+.item-faq.active {
+  background: #dbff00;
+  border-color: var(--blue);
+}
+
+.item-faq.active .item-faq__indicator {
+  background: var(--blue);
+}
+
+.item-faq.active .item-faq__indicator svg path {
+  stroke: white;
 }
 
 .item-faq__block {
@@ -2013,14 +2032,36 @@ p {
   display: -ms-flexbox;
   display: flex;
   border-radius: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 
 .feel-results__card--kaspersky {
   border: 2px solid var(--blue);
 }
 
+.feel-results__card--kaspersky:hover {
+  border-color: #0077ff;
+  -webkit-transform: translateY(-0.625rem);
+  -ms-transform: translateY(-0.625rem);
+  transform: translateY(-0.625rem);
+  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  background-color: #e8f3ff;
+}
+
 .feel-results__card--skoda {
   border: 2px solid var(--green);
+}
+
+.feel-results__card--skoda:hover {
+  -webkit-transform: translateY(-0.625rem);
+  -ms-transform: translateY(-0.625rem);
+  transform: translateY(-0.625rem);
+  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  background-color: #fcffe9;
 }
 
 .feel-results__main {
