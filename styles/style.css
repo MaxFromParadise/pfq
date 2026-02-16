@@ -1801,7 +1801,7 @@ p {
 .results-clients {
   padding-top: 100px;
   padding-bottom: 100px;
-  padding: 100px 0px 100px 21px;
+  padding: 100px 0px 100px 0px;
   background-color: #f8f9ff;
   border-radius: 40px;
   margin-bottom: 10.3125rem;
@@ -1809,7 +1809,6 @@ p {
 
 .results-clients__container {
   position: relative;
-  padding-right: 0;
 }
 
 .results-clients__container .title-h2 {
@@ -2597,6 +2596,15 @@ p {
     padding: 1.875rem;
   }
 
+  .why__small {
+    padding: 1.5625rem 0.9375rem;
+    gap: 1rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
   .why__small_blue {
     grid-area: blue;
   }
@@ -2808,10 +2816,6 @@ p {
 }
 
 @media (max-width: 768px) {
-  [class*=__container] {
-    padding: 0 18px;
-  }
-
   .button-new {
     border-radius: 10px;
   }
@@ -2833,6 +2837,11 @@ p {
     padding-top: 47px;
     padding-bottom: 135px;
     margin-bottom: 5rem;
+  }
+
+  .results-clients__container {
+    padding: 0;
+    padding-left: 0.9375rem;
   }
 
   .results-clients__nav {
@@ -3059,6 +3068,10 @@ p {
     margin-bottom: 3.125rem;
   }
 
+  .why__grid {
+    grid-template-areas: "google google" "blue blue" "red red" "contrast contrast";
+  }
+
   .why__google-sign {
     font-size: 1.125rem;
   }
@@ -3070,11 +3083,6 @@ p {
 
   .why__google-text {
     font-size: 1.125rem;
-  }
-
-  .why__small {
-    padding: 0.9375rem;
-    gap: 1rem;
   }
 
   .why__bottom-item {
