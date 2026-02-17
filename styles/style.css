@@ -120,7 +120,7 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 20px;
+  gap: 33px;
 }
 
 .headerMainPage .header__container a {
@@ -267,6 +267,11 @@ p {
 .headerMainPage.progress a.button-new {
   color: var(--black);
   background-color: var(--white);
+}
+
+.headerMainPage.progress a.button-new:hover {
+  color: var(--white) !important;
+  background-color: var(--black) !important;
 }
 
 .headerMainPage.progress a:hover {
@@ -965,6 +970,7 @@ p {
   justify-content: space-between;
   gap: 1.875rem;
   margin-bottom: 4.9375rem;
+  max-width: 71.875rem;
 }
 
 .why__descr {
