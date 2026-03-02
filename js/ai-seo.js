@@ -34,7 +34,14 @@ const initAnimations = () => {
         .item-game,
         .block-game__top,
         .article-game__text,
-		.card-process__line
+		.card-process__line,
+		.can-feel__item,
+		.optimization__main,
+		.img-specialist,
+		.block-specialist,
+		.bottom-specialist,
+		.free-audit__left,
+		.free-audit__form
     `);
 
 	animateElements.forEach((el) => {
