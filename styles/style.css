@@ -909,6 +909,12 @@ p {
   margin-top: 5.625rem;
   width: 100%;
   overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hero__flex::-webkit-scrollbar {
+  display: none;
 }
 
 .hero .item-hero {
@@ -2629,6 +2635,7 @@ p {
     width: 100vw;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
+    margin-top: 3.75rem;
   }
 
   .hero .item-hero {
@@ -2878,6 +2885,7 @@ p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-bottom: 2.9375rem;
   }
 
   .game__main {
@@ -3133,6 +3141,11 @@ p {
     flex-direction: column;
   }
 
+  .block-specialist__text {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
   .block-specialist__stats-title {
     font-size: 1rem;
   }
@@ -3149,6 +3162,11 @@ p {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
+  }
+
+  .bottom-specialist__quote-text {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .free-audit__left {
