@@ -2884,6 +2884,7 @@ p {
   .hero__text {
     font-size: 1.125rem;
     margin-bottom: 2.1875rem;
+    text-align: left;
   }
 
   .game {
