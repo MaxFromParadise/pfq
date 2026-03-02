@@ -2887,6 +2887,26 @@ p {
     text-align: left;
   }
 
+  .hero .item-hero {
+    padding: 1.4375rem 1.6875rem;
+  }
+
+  .hero .item-hero__icon svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .hero .item-hero__stat {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .hero .item-hero__text {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
   .game {
     margin-bottom: 5rem;
   }
