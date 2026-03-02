@@ -1032,6 +1032,12 @@ p {
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
+.game__left .item-game:not(:first-child) {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .game__left .block-game__sign {
   background: rgba(0, 0, 0, 0.8);
   color: white;
@@ -2863,12 +2869,16 @@ p {
 
   .hero__sign {
     margin-bottom: 1.875rem;
+    padding: 0.5rem 1rem;
+    -ms-flex-item-align: self-start;
+    align-self: self-start;
   }
 
   .hero__title {
     font-size: 2.75rem;
     line-height: 3.125rem;
     margin-bottom: 1.375rem;
+    color: #0077ff;
   }
 
   .hero__text {
